@@ -1,0 +1,53 @@
+
+ul, li, a, body{
+    color: green;
+    font-family: 'Popins','Questrial','Roboto', serif;
+}
+h1{
+    color: white;
+    font-size: 70px;
+}
+.jumbotron p{
+    color: white;
+    font-size: 20px;
+}
+.btn-sucess{
+    background-color: #008000;
+    color: white;
+}     
+.navbar-toggler{
+        color: #008000;
+        border-color: #008000;
+}
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-image: linear-gradient(green, #008000e8,#008000d6, white);
+
+}
+  
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+  
+.jumbotron-heading {
+    font-weight: 300;
+}
+  
+.jumbotron .container {
+    max-width: 40rem;
+}
+.box-shadow { 
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+}
+@media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 3);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 3);
+    }
+  }

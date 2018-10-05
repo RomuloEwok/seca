@@ -1,0 +1,64 @@
+.navbar-toggler{
+    color: #008000;
+    border-color: #008000;
+}
+/* Carousel */
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+ul, li, a, body{
+    color: green;
+    font-family: 'Popins','Questrial','Roboto', serif;
+  }
+.carousel-caption {
+    top: 40%;
+    font-size: 95%;
+  }
+
+.background{
+    filter: brightness(40%);
+  }
+.btn-light{
+    color: #008000; 
+}  
+
+
+
+  /* Carousel End */
+  
+  
+  /* Footer */
+  
+  footer{
+      background-color: white;
+  }
+  h5 {
+      color: green;
+  }
+  .fa-facebook{
+      color: green;
+  }
+  .fa-twitter{
+      color: green;
+  }
+  .fa-instagram{
+      color: #008000;
+  }
+  .form-control::-moz-placeholder {
+    color: #008000;
+  }
+  .form-control:-ms-input-placeholder {
+    color: #008000;
+  }
+  .form-control::-webkit-input-placeholder {
+    color: #008000;
+  }
+
+  /* Footer End */
