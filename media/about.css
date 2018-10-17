@@ -1,0 +1,12 @@
+.navbar-toggler{
+    color: #008000;
+    border-color: #008000;
+}
+ul, li, a{
+    color: green;
+    font-family: 'Popins','Questrial','Roboto', serif;
+
+}
+p{
+    font-size: 14px;
+}
