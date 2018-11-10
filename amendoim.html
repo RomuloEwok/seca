@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>SECA - Amendoin</title>
+    <link rel="icon" type="image/gif/png" href="img/iconseca.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--Personal CSS-->
+    <link rel="stylesheet" href="media/amendoin.css">   
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/SecaLogo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo do Seca">
+                SECA
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plantacoes.html">Suas Plantações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nós
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Modal-->
+    <div class="modal fade" id="modalClima" tabindex="-1" role="dialog" aria-labelledby="modalClima"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Clima</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    O amendoim pode ser cultivado em regiões que apresentam temperaturas médias entre 20°C e 30°C durante todo o ciclo de cultivo da planta. A planta não suporta baixas temperaturas. Como a chuva prejudica a polinização, o ideal é que o clima permaneça seco durante o período de floração.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sucess" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalLumi" tabindex="-1" role="dialog" aria-labelledby="modalLumi"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Luminosidade</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    O amendoim necessita de alta luminosidade, com luz solar direta pelo menos algumas horas por dia.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sucess" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalSolo" tabindex="-1" role="dialog" aria-labelledby="modalSolo" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Solo</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Cultive de preferência em solo bem drenado, leve, solto, fértil e rico em matéria orgânica. A planta pode formar em suas raízes uma associação simbiótica com bactérias conhecidas como rizóbios ou rhizobium (gênero Bradyrhizobium), capazes de fixar o nitrogênio do ar no solo como amônia ou nitrato, provendo pelo menos parte do nitrogênio necessário para as plantas.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sucess" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalPlantio" tabindex="-1" role="dialog" aria-labelledby="modalPlantio" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Plantio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    As sementes geralmente são semeadas direto no local definitivo. As sementes também podem ser semeadas em pequenos vasos ou copinhos de papel jornal com 10 cm de altura. As mudas são transplantadas quando têm de 10 a 15 cm de altura.<br/>
+
+                    O espaçamento recomendado é de 15 a 30 cm entre as plantas e de 60 a 80 cm entre as linhas de plantio.<br/>
+                        
+                    O amendoim pode ser cultivado em vasos e outros recipientes, mas estes devem ter um diâmetro mínimo de 50 cm.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sucess" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalColheita" tabindex="-1" role="dialog" aria-labelledby="modalColheita" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Colheita</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                        A colheita das vagens pode ser feita de 100 dias a quase seis meses após a semeadura, variando conforme a cultivar plantada e as condições de cultivo.<br/>
+
+                        A colheita do amendoim é realizada quando as folhas das plantas estão amareladas. Retire algumas vagens da terra e verifique se a parte interna da vagem apresenta veios mais escuros, o que indica que estão maduras e prontas para a colheita.<br/>
+                        
+                        As plantas são arrancadas do solo e deixadas em local protegido da chuva e umidade com as raízes e vagens expostas, para secagem por uma ou duas semanas. Se a colheita for atrasada, ao arrancar a planta, as vagens podem se destacar da planta e ficar no solo. Após a secagem, as vagens se soltam da planta facilmente e podem ser recolhidas e armazenadas em local fresco e seco por vários meses, ou os amendoins podem ser retirados e utilizados.<br/>
+                        
+                        O fungo Aspergillus flavus pode se desenvolver se a colheita for realizada em condições de alta umidade, se houver demora na secagem ou se o amendoim for armazenado de forma inadequada. Este fungo produz aflotoxinas, que são substâncias tóxicas e carcinogênicas, sendo portanto um sério risco a saúde. Se o amendoim estiver contaminado ou apresentar sinais de bolor, ele não deve ser aproveitado de forma alguma para alimentação humana ou animal.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sucess" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modalVideo" tabindex="-1" role="dialog" aria-labelledby="modalVideo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Amendoin</h1>
+            <p>O amendoim é uma semente originária da América do Sul. Ele é rico em vitamina E, proteínas, carboidratos
+                e importantes sais minerais.</p>
+        </div>
+    </section>
+    <div class="album py-5 bg-light">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/clima.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Clima</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                        <button type="button" class="btn btn-sucess" data-toggle="modal" data-target="#modalClima">
+                                                Ver
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/Luminosidade.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Luminosidade</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sucess" data-toggle="modal" data-target="#modalLumi">
+                                        Ver
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/solo.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Solo</h4>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sucess" data-toggle="modal" data-target="#modalSolo">                                         Ver                                     </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="img/Plantio.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Plantio</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sucess" data-toggle="modal" data-target="#modalPlantio">                                         Ver                                     </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="img/Colheita.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Colheita</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sucess" data-toggle="modal" data-target="#modalColheita">                                         Ver                                     </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top" src="img/Video.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h4 class="card-title">Vídeo</h4>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                            <a href="#" class="btn btn-sucess" data-toggle="modal" data-target="#modalVideo" data-theVideo="https://www.youtube.com/embed/XRRx-V7LfVc">Ver</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <!--Scripts do Bootstrap-->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                    crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+                    crossorigin="anonymous"></script>
+
+                <!--Modal Script-->
+                <script>
+                    autoPlayYouTubeModal();
+                    function autoPlayYouTubeModal() {
+                        var trigger = $("body").find('[data-toggle="modal"]');
+                        trigger.click(function () {
+                            var theModal = $(this).data("target"),
+                                videoSRC = $(this).attr("data-theVideo"),
+                                videoSRCauto = videoSRC + "?autoplay=1";
+                            $(theModal + ' iframe').attr('src', videoSRCauto);
+                            $(theModal + ' button.close').click(function () {
+                                $(theModal + ' iframe').attr('src', videoSRC);
+                            });
+                        });
+                    }
+                </script>
+</body>
+</html>
